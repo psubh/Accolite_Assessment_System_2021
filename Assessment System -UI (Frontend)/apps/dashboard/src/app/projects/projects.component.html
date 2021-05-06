@@ -1,0 +1,22 @@
+<div class="container">
+    <!-- PROJECTS LIST -->
+    <div class="col-50">
+      <app-projects-list
+      [projects]="filteredProjects"
+      [currUser]="currUser"
+      (selected)="selectProject($event)"
+      (deleted)="deleteProject($event)"
+      (searched)="searchedProject($event)"
+      ></app-projects-list>
+    </div>
+    
+    <!-- PROJECT DETAILS -->
+    <div class="col-50">
+      <app-projects-details
+      [project]="selectedProject"
+      [currUser]="currUser"
+      (saved)="saveProject($event)"
+      (canceled)="cancel()"
+      ></app-projects-details>
+    </div>
+  </div>

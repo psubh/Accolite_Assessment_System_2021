@@ -1,0 +1,25 @@
+<div>
+
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+              <button mat-raised-button color="accent">
+                <span>Questions</span>
+              </button>
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-list>
+                <mat-list-item (click)="selected.emit(question)"
+                *ngFor="let question of questions; let i = index">
+                <div class="listItem">
+                    <span class="listItem__prefix">{{i+1}}. </span>
+                    <p mat-line>
+                        {{question.description}}
+                    </p>
+                </div>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>
+</div>
