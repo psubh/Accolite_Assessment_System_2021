@@ -28,9 +28,6 @@ It having all the tabs to redirect to respective sections.
 
 ![ScreenShot](https://github.com/psubh/Accolite_Assessment_System_2021/blob/main/screenshots/home_page.png)
 
-### Home page logout
-
-![ScreenShot](https://github.com/psubh/Accolite_Assessment_System_2021/blob/main/screenshots/home_page_logout.png)
 
 ### Projects 
 View & Search projects created by you and others Create, Update & Delete your projects.
